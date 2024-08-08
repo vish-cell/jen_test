@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+  labels:
+    app: app1
+    env: dep
+spec:
+  containers:
+    - name: website
+      image: vishalg2022/test
+      ports:
+        - containerPort: 8000
